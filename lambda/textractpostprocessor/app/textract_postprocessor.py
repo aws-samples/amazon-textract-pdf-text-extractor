@@ -11,9 +11,9 @@ import math
 
 pattern_detector = PatternDetector()
 
-noLinesHeader = os.environ.get("NO_LINES_HEADER", 5)
-noLinesFooter = os.environ.get("NO_LINES_FOOTER", 10)
-filterParaWithWords = os.environ.get("FILTER_PARA_WORDS", 10)
+noLinesHeader = int(os.environ.get("NO_LINES_HEADER", 5))
+noLinesFooter = int(os.environ.get("NO_LINES_FOOTER", 10))
+filterParaWithWords = int(os.environ.get("FILTER_PARA_WORDS", 10))
 
 
 def lambda_handler(event, context):
